@@ -6,6 +6,8 @@ import Register from "./components/Register";
 import Layout from "./components/Layout";
 import './index.css'
 import Profile from "./pages/Profile";
+import Users from "./pages/Users";
+import Messenger from "./pages/Messenger";
 
 
 
@@ -22,6 +24,8 @@ function App() {
             <Route path="/login" element={ <Login /> }>Login</Route>
             <Route index element={ <Home /> } />
             <Route path="/register" element={ <Register /> } />
+            <Route path="/users" element={ <Users /> } />
+            <Route path="/chat" element={ <Messenger /> } />
             <Route path="/profile" element={ <Profile />} />
           </Route>
         </Routes>

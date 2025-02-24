@@ -92,3 +92,87 @@ form {
       }
     }
   }
+
+  .users-container, .messenger-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #f5f5f5;
+        border-radius: 5px;
+
+        button {
+          background-color: #2ecc71;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+          border-radius: 5px;
+
+          &:hover {
+            background: darken(#2ecc71, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  .messenger-container {
+
+    .mwssages {
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+
+    }
+
+    .sent {
+      text-align: right;
+      color: #2ecc71;
+    }
+
+    .received {
+      text-align: left;
+      color: #e74c3c;
+    }
+
+    .message-input {
+      display: flex;
+      gap: 10px;
+
+      input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        background: #3498db;
+        color: #fff;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 5px;
+
+        &:hover {
+          background: darken(#3498db, 10%);
+        }
+      }
+    }
+  }

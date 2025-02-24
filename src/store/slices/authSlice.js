@@ -54,8 +54,19 @@ const authSlice = createSlice({
     initialState: {
         user: JSON.parse(localStorage.getItem('user')) || null,
         error: null,
+        friends: [],
+        messages: [],
     },
-    reducers: {},
+    reducers: {
+        addFriend: (state, action) => {
+            if (!state.friends.includes(action.payload)) {
+                state.friends.push(action.payload)
+            }
+        },
+        sendMessage: (state, action) => {
+            state.messages.push(action.payload)
+        }
+    },
     extraReducers: (builder) => {
         builder
             .addCase(registerUser.fulfilled, (state, action) => {
@@ -75,4 +86,5 @@ const authSlice = createSlice({
     }
 })
 
+export const {addFriend, sendMessage} = authSlice.actions;
 export default authSlice.reducer;
