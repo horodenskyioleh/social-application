@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { addFriend } from '../store/slices/authSlice'
+import { addFriend, fetchFriends } from '../store/slices/authSlice'
 import '../styles/styles-generic.scss'
 
 const usersList = [
@@ -12,6 +13,11 @@ const usersList = [
 const Users = () => {
     const dispatch = useDispatch();
     const friends = useSelector( (state) => state.auth.friends);
+    
+
+    useEffect(() => {
+        dispatch(fetchFriends());
+      }, [dispatch]);
 
   return (
     <div className='users-container'>
@@ -21,8 +27,19 @@ const Users = () => {
                 usersList.map( (user) => (
                     <li key={user.id}>
                         <span>{user.name}</span>
-                        {!friends.includes(user.name) && (
+                        {/* {!friends.includes(user.name) && (
                             <button onClick={() => dispatch(addFriend(user.name))}>Add in friends</button>
+                        )} */}
+                        {
+                            !friends.some(friend => friend.name === user.name) && (
+                                <button onClick={() => dispatch(addFriend(user.name))}>Додати в друзі</button>
+                              )
+                        }
+                        {
+                            friends.some(friend => friend.name === user.name) && (
+                                <Link to={`/friend/${user.id}`}>
+                                    <button>Переглянути профіль</button>
+                                </Link>
                         )}
                     </li>
                 ))

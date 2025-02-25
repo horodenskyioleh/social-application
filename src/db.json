@@ -12,5 +12,66 @@
       "password": "123456",
       "name": "oleg"
     }
+  ],
+  "friends": [
+    {
+      "id": "0653",
+      "name": "John"
+    },
+    {
+      "id": "bc2a",
+      "name": "Jane"
+    },
+    {
+      "id": "ecbd",
+      "name": "Mike"
+    },
+    {
+      "id": "b37a",
+      "name": "John"
+    },
+    {
+      "id": "443e",
+      "name": "John"
+    },
+    {
+      "id": "d814",
+      "name": "John"
+    },
+    {
+      "id": "ae38",
+      "name": "John"
+    },
+    {
+      "id": "beb8",
+      "name": "Jane"
+    },
+    {
+      "id": "eb12",
+      "name": "Jane"
+    },
+    {
+      "id": "2924",
+      "name": "Jane"
+    },
+    {
+      "id": "6c94",
+      "name": "Mike"
+    },
+    {
+      "id": "2ab1",
+      "name": "Mike"
+    },
+    {
+      "id": "1e2a",
+      "name": "Mike"
+    }
+  ],
+  "messages": [
+    {
+      "id": "6d0a",
+      "sender": "oleg",
+      "text": "abcd"
+    }
   ]
 }
