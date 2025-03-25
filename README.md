@@ -8,13 +8,14 @@
 
 
 ## 🔥 Features:
+<pre>
 ✅ Authentication & Registration (token-based authentication)
 ✅ Friends List (add, view profiles)
 ✅ Chat System (send messages, chat history)
 ✅ News Feed with Posts
 ✅ Protected Routes (authentication with PrivateRoute)
 ✅ Beautiful UI with SCSS Styling
-
+</pre>
 About Text Here
 
 ## Documentation
