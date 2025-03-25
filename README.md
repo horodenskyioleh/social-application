@@ -1,5 +1,10 @@
 <p align="center">
-      <img src="https://i.ibb.co/4g9WTT2R/Screenshot-2025-03-25-alle-22-45-42.png" width="726">
+      Social Network (React + Redux + Sass + JSON Server)
+
+</p>
+
+<p>
+      🚀 Social Network is a simple yet powerful social networking app built with React, Redux Toolkit, Sass, and JSON Server. The app allows users to create profiles, add friends, send messages, and post updates.
 </p>
 
 <p align="center">
