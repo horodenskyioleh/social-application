@@ -1,18 +1,19 @@
 
-## Social Network (React + Redux + Sass + JSON Server)
+## Social App (React + Redux + Sass + JSON Server)
 
 
 <p>
       🚀 Social Network is a simple yet powerful social networking app built with React, Redux Toolkit, Sass, and JSON Server. The app allows users to create profiles, add friends, send messages, and post updates.
 </p>
 
-<p align="center">
-   <img src="https://ibb.co/4g9WTT2R" alt="Unity Version">
-   <img src="" alt="Game Version">
-   <img src="" alt="License">
-</p>
 
-## About
+## 🔥 Features:
+✅ Authentication & Registration (token-based authentication)
+✅ Friends List (add, view profiles)
+✅ Chat System (send messages, chat history)
+✅ News Feed with Posts
+✅ Protected Routes (authentication with PrivateRoute)
+✅ Beautiful UI with SCSS Styling
 
 About Text Here
 
