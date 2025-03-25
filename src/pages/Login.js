@@ -1,9 +1,11 @@
 import React,{useEffect, useState} from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/login.scss'
 import '../styles/styles-generic.scss';
 import { useDispatch,useSelector } from 'react-redux'
 import { loginUser } from '../store/slices/authSlice';
 import { useNavigate } from 'react-router-dom';
+
 
 const Login = () => {
 
@@ -16,11 +18,13 @@ const Login = () => {
     password: ''
   });
 
-  useEffect( () => {
-    if(user) {
-      navigate('/profile') //перенаправлення на profile після входу
-    }
-  },[user, navigate]);
+
+   useEffect( () => {
+      if(user) {
+        //navigate('/profile') // navigate on a profile after entering in system
+        navigate('/news')
+      }
+    },[user, navigate]);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -45,6 +49,7 @@ const Login = () => {
               onChange={(e) => setForm({ ...form, password: e.target.value})}
             />
             <button type='submit'>Enter</button>
+           <Link to='/register'>Don't you have an account?</Link>
             
         </form>
         

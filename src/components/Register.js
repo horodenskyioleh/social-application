@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { registerUser } from '../store/slices/authSlice'
 import '../styles/styles-generic.scss'
@@ -36,6 +37,7 @@ const Register = () => {
                 onChange={(e) => setForm({ ...form, password: e.target.value})}
             /> 
             <button type='submit'>Register</button>
+            <Link to='/login'>Do you have an account?</Link>
         </form>
     </div>
   )

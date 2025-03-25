@@ -32,18 +32,18 @@ const Users = () => {
                         )} */}
                         {
                             !friends.some(friend => friend.name === user.name) && (
-                                <button onClick={() => dispatch(addFriend(user.name))}>Додати в друзі</button>
+                                <button onClick={() => dispatch(addFriend(user.name))}>Add to friends</button>
                               )
                         }
                         {
                             friends.some(friend => friend.name === user.name) && (
                                 <Link to={`/friend/${user.id}`}>
-                                    <button>Переглянути профіль</button>
+                                    <button>View profile</button>
                                 </Link>
                         )}
                     </li>
                 ))
-            }
+            } 
         </ul>
     </div>
   )

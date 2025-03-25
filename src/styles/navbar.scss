@@ -35,5 +35,21 @@
           color: gray;
         }
       }
+
+     
+    }
+
+    .logout-btn {
+      
+      padding: 3px 10px; 
+      color: black; 
+      cursor: pointer;
+      font-size: 16px;
+      border: none;
+      &:hover {
+        color: gray;
+        border-bottom: 1px solid black;
+        
+      }
     }
   }

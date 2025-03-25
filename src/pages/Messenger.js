@@ -25,7 +25,7 @@ const Messenger = () => {
 
   return (
     <div className="messenger-container">
-      <h2>Чат</h2>
+      <h2>Chat</h2>
       <div className="messages">
         {messages.map((msg, index) => (
           <p key={index} className={msg.sender === user.name ? 'sent' : 'received'}>
