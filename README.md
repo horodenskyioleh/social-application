@@ -1,5 +1,5 @@
 <p align="center">
-      <i>Social Network (React + Redux + Sass + JSON Server)</i>
+      <b>Social Network (React + Redux + Sass + JSON Server)</b>
 </p>
 
 <p>
