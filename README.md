@@ -1,6 +1,5 @@
 <p align="center">
-      ###Social Network (React + Redux + Sass + JSON Server)
-
+      <i>Social Network (React + Redux + Sass + JSON Server)</i>
 </p>
 
 <p>
